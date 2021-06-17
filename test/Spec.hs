@@ -1,0 +1,8 @@
+import Test.Hspec
+import Lib
+
+main :: IO ()
+main = hspec $
+  describe "square" $
+    it "squares an integer" $
+      square 2 `shouldBe` 4
